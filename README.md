@@ -18,7 +18,7 @@ The last version of Python 3.
 ## How to launch this game :  
 
 ```sh
-ZombieTextGame.py
+python3 ZombieTextGame.py
 ```  
 
 
