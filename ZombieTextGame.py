@@ -98,7 +98,7 @@ def room_3():
         print("a zombie holding a sword and a hole on the far side of the room.")
         print("The passage to the south leads to the second room.")
         print("What do you do?")
-        print("Enter : east, torch, sword, hole or south")
+        print("Enter : east, gun, sword, hole or south")
 
         choice = input("> ")
 
