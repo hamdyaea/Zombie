@@ -7,12 +7,34 @@ zombie_alive = True
 Big_zombie_alive = True
 gun = False
 
-
-def room_1():
+def begin():
     print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
     print("Welcome to the Zombie text game")
     print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
     print("After a virus created in the laboratory has been released by accident the world is now full of zombies.")
+    print("You are in a big room with blood covered walls. You have a gun in your bag.")
+    print("It's really dark and all you can see is three doors.")
+    print("They lead east, north and west. What do you do?")
+    print("Enter : east, north or west")
+    choice = input("> ");
+
+    if "west" in choice:
+        room_2()
+    elif "north" in choice:
+        room_4()
+    elif "east" in choice:
+        print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
+        print("""You carefully go through the narrow passage heading
+east. After walking for three minutes, you see that
+it ends with a solid wall. You turn around to get back
+but you find yourself facing another wall. Somewhat,
+you have trapped yourself. Without water nor food, you
+die some days later. After that, you wake up as a zombie.""")
+        game_over()
+    else:
+        room_1()
+
+def room_1():
     print("You are in a big room with blood covered walls. You have a gun in your bag.")
     print("It's really dark and all you can see is three doors.")
     print("They lead east, north and west. What do you do?")
@@ -153,7 +175,7 @@ def room_4():
 
     if Big_zombie_alive:
         print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
-        print("In the room there's a big zombie.")
+        print("In the room there's a big zombie. You can take your gun or walk to another directions.")
         print("Enter : gun, north, east, south or west")
         choice = input("> ")
         if "gun":
@@ -201,7 +223,7 @@ won the game!""")
 
 
 def start():
-    room_1()
+    begin()
 
 
 def win():
