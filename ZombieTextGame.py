@@ -13,7 +13,7 @@ def room_1():
     print("Welcome to the Zombie text game")
     print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
     print("After a virus created in the laboratory has been released by accident the world is now full of zombies.")
-    print("You are in a big room with blood covered walls. You have in your bag.")
+    print("You are in a big room with blood covered walls. You have a gun in your bag.")
     print("It's really dark and all you can see is three doors.")
     print("They lead east, north and west. What do you do?")
     print("Enter : east, north or west")
@@ -158,7 +158,7 @@ def room_4():
         choice = input("> ")
         if "gun":
             print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
-            print("""Suddenly you take your gun out of your bag. An uknown force urges you and you shoot
+            print("""Suddenly you take your gun out of your bag. An unknown force urges you and you shoot
             the head of the big zombie. It dies with horrible screams.""")
             Big_zombie_alive = False
             room_4()
@@ -213,7 +213,7 @@ def win():
     zombie_alive = True
     Big_zombie_alive = True
     gun = False
-    print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
+    print("Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ ")
     print("You win")
     print("You can run away from the zombies")
     print ("Do you want to play again? (y / n)")
@@ -237,7 +237,7 @@ def game_over():
     zombie_alive = True
     Big_zombie_alive = True
     gun = False
-    print("ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ˬ ")
+    print("ƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔ")
     print("Game over")
     print("You are now a zombie")
     print ("Do you want to play again? (y / n)")
