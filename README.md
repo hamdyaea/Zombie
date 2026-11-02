@@ -1,31 +1,14 @@
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  
+# Zombie — Text Adventure
 
-# Zombie game
+**Developer:** Hamdy Abou El Anein  
+**Contact:** info@daylightlinux.ch  
+**License:** GPL v3 (see LICENSE).
 
-![Screenshot](zombie.jpg)  
-
-## What's this game ?  
-
-This is a zombie text game in Python 3.
-
-![Screenshot](screenshot.png)  
-
-
-## What you need to make it work :  
-
-The last version of Python 3.
-
-## How to launch this game :  
+A modern Python 3 interactive zombie adventure. The original recursive, global-state implementation has been redesigned as a compact, testable state machine. Player choices are validated, the game can be exited safely, and winning and losing paths have automated tests.
 
 ```sh
 python3 ZombieTextGame.py
-```  
+python3 -m unittest discover -s tests -v
+```
 
-
-## Developer - Author
-
-Hamdy Abou El Anein
-
-## Homepage
-
-http://www.daylightlinux.ch 
+This is a streamlined retelling of the original adventure rather than a verbatim reproduction of every historical room. The original full story remains on the [old branch](https://github.com/hamdyaea/Zombie/tree/old).
